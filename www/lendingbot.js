@@ -26,7 +26,7 @@ var btcDisplayUnitsModes = [BTC, mBTC, Bits, Satoshi];
 
 function updateJson(data) {
     $('#status').text(data.last_status);
-    $('#updated').text(data.last_update);
+    $('#updated').text(data.last_update + ' UTC');
     $('#title').text(data.exchange + ' ' + data.label)
     document.title = data.exchange + ' ' + data.label
 
